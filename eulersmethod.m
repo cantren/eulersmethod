@@ -4,8 +4,8 @@ disp("#                                                  #");
 disp("# Euler's Method of numerically integrating an ODE #");
 disp("#                                                  #");
 disp("##########DEMO########DEMO########DEMO##############"); 
-%n = 10;                   % number of steps
-n = 10000;                % number of steps
+n = 10;                   % number of steps
+%n = 10000;                % number of steps
 a = 0;                    % start of interval
 b = 1;                    % end of interval
 h = (b-a)/n;              % step size
@@ -13,7 +13,7 @@ y = 1;
 t = 0;
 for i = 1:n
    % uncomment below lines for debug %
-   % output = strcat("t: ", num2str(t),"y approx: ", num2str(y));
+    output = strcat("t: ", num2str(t),"y approx: ", num2str(y));
    % uncomment above lines for debug %  
    
    
@@ -25,12 +25,12 @@ for i = 1:n
 
     
    % uncomment below lines for debug %
-   % disp(output);
-   % if(i==n)
-   %  output = strcat("t: ", num2str(t),"y approx: ", num2str(y));
-   %  disp(output);
-   %  disp("###################################################");
-   % end
+    disp(output);
+    if(i==n)
+     output = strcat("t: ", num2str(t),"y approx: ", num2str(y));
+     disp(output);
+     disp("###################################################");
+    end
    % uncomment above lines for debug %  
 end
 
